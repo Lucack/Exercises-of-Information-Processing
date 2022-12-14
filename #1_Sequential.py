@@ -4,44 +4,44 @@
 #Escreva um programa que mostre a mensagem "Alo, mundo!" (observe que não há acentuação na mensagem).
 
 
-        print("Alo, mundo!")
+print("Alo, mundo!")
 
 #1_2
 #Escreva um programa que leia 3 notas e calcule a média (aritmética).
 
-        nota1=int(input())
-        nota2=int(input())
-        nota3=int(input())
-        soma= nota1 + nota2 + nota3
-        media= soma/3
-        print("{:.2f}".format(media))
+nota1=int(input())
+nota2=int(input())
+nota3=int(input())
+soma= nota1 + nota2 + nota3
+media= soma/3
+print("{:.2f}".format(media))
 
 
 
 #1_3
 #Escreva um programa que leia dois números inteiros A e B, e então imprima o resultado das seguintes operações matemáticas:
 
-        Soma (A + B)
-        Subtração (A - B)
-        Multiplicação (A x B)
-        Divisão (A / B)
-        Divisão inteira (A / B)
-        Resto da divisão A / B
+Soma (A + B)
+Subtração (A - B)
+Multiplicação (A x B)
+Divisão (A / B)
+Divisão inteira (A / B)
+Resto da divisão A / B
 
-        a= int(input())
-        b= int(input())
-        soma= a+b
-        print(soma)
-        sub= a-b
-        print(sub)
-        mult= a*b
-        print(mult)
-        div= a/b
-        print(div)
-        divint= a//b
-        print(divint)
-        resto= a%b
-        print(resto)
+a= int(input())
+b= int(input())
+soma= a+b
+print(soma)
+sub= a-b
+print(sub)
+mult= a*b
+print(mult)
+div= a/b
+print(div)
+divint= a//b
+print(divint)
+resto= a%b
+print(resto)
 
 
 #1_4
@@ -51,13 +51,13 @@
 
 
 
-        Ax=int(input())
-        Ay=int(input())
-        Bx=int(input())
-        By=int(input())
-        import math
-        dist= math.sqrt((Bx-Ax)**2+(By-Ay)**2)
-        print("{:.2f}".format(dist))
+Ax=int(input())
+Ay=int(input())
+Bx=int(input())
+By=int(input())
+import math
+dist= math.sqrt((Bx-Ax)**2+(By-Ay)**2)
+print("{:.2f}".format(dist))
 
 
 #1_5
@@ -77,21 +77,21 @@
 #Saída:
 #Valor do bit de paridade (para paridade par): 0 ou 1
 
-        bit1= int(input())
-        bit2= int(input())
-        bit3= int(input())
-        bit4= int(input())
-        bit5= int(input())
-        bit6= int(input())
-        bit7= int(input())
+bit1= int(input())
+bit2= int(input())
+bit3= int(input())
+bit4= int(input())
+bit5= int(input())
+bit6= int(input())
+bit7= int(input())
 
-        num= bit1+bit2+bit3+bit4+bit5+bit6+bit7
-        resto= num%2
+num= bit1+bit2+bit3+bit4+bit5+bit6+bit7
+resto= num%2
 
-        if(resto==0):
-            print("Valor do bit de paridade (para paridade par): 0")
-        else:
-            print("Valor do bit de paridade (para paridade par): 1")
+if(resto==0):
+	print("Valor do bit de paridade (para paridade par): 0")
+else:
+	print("Valor do bit de paridade (para paridade par): 1")
 
 
 #1_6
@@ -103,9 +103,9 @@
 #Saída:
 #Valor com o desconto (utilize duas casas decimais)
 
-        valor= int(input())
-        desc= (valor*(1-0.1))*(1-0.1)
-        print(desc)
+valor= int(input())
+desc= (valor*(1-0.1))*(1-0.1)
+print(desc)
 
 # 1_7
 # Um determinado método para encriptar números de 4 dígitos consiste em adicionar 1 em cada dígito do número. Por exemplo:
@@ -119,37 +119,37 @@
 # Saída:
 # Número encriptado
 
-        num= int(input())
+num= int(input())
 
-        Milhar = (num%10000)//1000
-        Centena = (num%1000)//100
-        Dezena = (num%100)//10
-        Unidade = num%10
+Milhar = (num%10000)//1000
+Centena = (num%1000)//100
+Dezena = (num%100)//10
+Unidade = num%10
 
-        if (Milhar==9):
-            Milhar=0
-        else:
-            Milhar=Milhar+1
+if (Milhar==9):
+    Milhar=0
+else:
+    Milhar=Milhar+1
 
-        if (Centena==9):
-            Centena=0
-        else:
-            Centena=Centena+1
+if (Centena==9):
+    Centena=0
+else:
+    Centena=Centena+1
 
-        if (Dezena==9):
-            Dezena=0
-        else:
-            Dezena=Dezena+1
+if (Dezena==9):
+    Dezena=0
+else:
+    Dezena=Dezena+1
 
-        if (Unidade==9):
-            Unidade=0
-        else:
-            Unidade=Unidade+1
-        Milhar=str(Milhar)
-        Centena=str(Centena)
-        Dezena=str(Dezena)
-        Unidade=str(Unidade)
-        print(Milhar+Centena+Dezena+Unidade)
+if (Unidade==9):
+    Unidade=0
+else:
+    Unidade=Unidade+1
+Milhar=str(Milhar)
+Centena=str(Centena)
+Dezena=str(Dezena)
+Unidade=str(Unidade)
+print(Milhar+Centena+Dezena+Unidade)
 
 # 1_8
 # Um caminhão de carga possui uma capacidade máxima, medida em Kg. Para carregar o caminhão, os itens que serão transportados são guardados em caixas de transporte. Há caixas de diversas capacidades: Tipo A: 500Kg, Tipo B: 100Kg, Tipo C: 25Kg e Tipo D: 1Kg.
@@ -176,15 +176,15 @@
 # 2
 # 0
 
-        cap = int(input())
-        c500= cap//500
-        print(c500)
-        c100= (cap-(c500*500))//100
-        print(c100)
-        c25= (cap-(c500*500+c100*100))//25
-        print(c25)
-        c1 = (cap-(c500*500+c100*100+c25*25))//1
-        print(c1)
+cap = int(input())
+c500= cap//500
+print(c500)
+c100= (cap-(c500*500))//100
+print(c100)
+c25= (cap-(c500*500+c100*100))//25
+print(c25)
+c1 = (cap-(c500*500+c100*100+c25*25))//1
+print(c1)
 
 # 1_9
 # 1KB = 1000 bytes ou 1KB = 1024 bytes?
@@ -206,13 +206,13 @@
 # o tamanho do arquivo em bytes se o valor informado significa GiB (pelo padrão IEC)
 # módulo da diferença entre os dois tamanhos em bytes
 
-        gb= int(input())
-        k=gb*10**9
-        print(k)
-        ki= gb*2**30
-        print(ki)
-        dif=ki-k
-        print(dif)
+gb= int(input())
+k=gb*10**9
+print(k)
+ki= gb*2**30
+print(ki)
+dif=ki-k
+print(dif)
 
 
 # 1_10
@@ -247,15 +247,14 @@
 
 # Observação: imprima todos os valores com duas casas decimais após a vírgula
 
-        VP=int(input())
-        FN=int(input())
-        FP=int(input())
-        VN=int(input())
+VP=int(input())
+FN=int(input())
+FP=int(input())
+VN=int(input())
 
-        Acurácia = (VP+VN)/(VP+VN+FP+FN)
-        print("{:.2f}".format(Acurácia))
-        Precisão = VP/(VP+FP)
-        print("{:.2f}".format(Precisão))
-        Sensibilidade = VP/(VP+FN)
-        print("{:.2f}".format(Sensibilidade))
-
+Acurácia = (VP+VN)/(VP+VN+FP+FN)
+print("{:.2f}".format(Acurácia))
+Precisão = VP/(VP+FP)
+print("{:.2f}".format(Precisão))
+Sensibilidade = VP/(VP+FN)
+print("{:.2f}".format(Sensibilidade))
