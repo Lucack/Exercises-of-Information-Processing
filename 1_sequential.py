@@ -21,12 +21,12 @@ print("{:.2f}".format(media))
 #1_3
 #Escreva um programa que leia dois números inteiros A e B, e então imprima o resultado das seguintes operações matemáticas:
 
-Soma (A + B)
-Subtração (A - B)
-Multiplicação (A x B)
-Divisão (A / B)
-Divisão inteira (A / B)
-Resto da divisão A / B
+# Soma (A + B)
+# Subtração (A - B)
+# Multiplicação (A x B)
+# Divisão (A / B)
+# Divisão inteira (A / B)
+# Resto da divisão A / B
 
 a= int(input())
 b= int(input())
