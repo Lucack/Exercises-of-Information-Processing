@@ -1,7 +1,7 @@
 #4 - Vetores / Listas
 
 
-1_1
+4_1
 Escreva um programa para ler um vetor de inteiros com n elementos. O valor n deve ser fornecido em tempo de execução. Retorne o maior elemento do vetor.
 
 Entrada:
@@ -27,7 +27,7 @@ O maior valor no vetor lido.
                 maior=c
         print(maior)
 
-1_2
+4_2
 Escreva um programa para ler a nota e o nome dos alunos de uma classe, considerando n alunos. 
 Calcular a média da classe a partir da nota de seus n alunos. 
 Finalmente, escrever quais alunos conseguiram nota acima da média da classe.
@@ -64,7 +64,7 @@ Paula
             if notas[i]>med:
                 print(nomes[i])    
 
-1_3
+4_3
 Escreva um programa que leia um valor n e então leia n números inteiros e armazene em um vetor. Ao final, o programa deve imprimir a quantidade de valores que são pares e quantidade de valores que são ímpares.
 
 Entrada:
@@ -90,7 +90,7 @@ Quantidade de números ímpares no vetor
         print(par)
         print(impar)    
 
-1_4
+4_4
 Escreva um programa que leia um vetor de inteiros com n elementos. Depois some todos os valores que são vizinhos aos elementos com valor 1.
 Por exemplo, para o vetor [12, 1, 50, 60, 70, 1], o programa deve imprimir 132, que é o resultado da soma 12 + 50 + 70 (os valores vizinhos aos elementos com valor 1 no vetor.
 
@@ -119,7 +119,7 @@ Somatório dos valores vizinhos aos elementos com valor 1
                 sum=sum+a+p    
         print(sum)    
 
-1_5
+4_5
 Escreva um programa que leia um vetor de inteiros com n elementos. Depois faça uma função que receba o vetor e duas posições i e j, e então efetue a troca dos valores das posições i e j no vetor. Importante: a função deve validar os argumentos, ou seja, se i e j são índices válidos (dentro dos limites do vetor) antes de realizar a troca. Neste exercício, o índice do primeiro elemento de um vetor é o 0 (zero). Se algum índice for inválido, não realize a troca.
 
 Entrada:
@@ -153,7 +153,7 @@ Vetor gerado de acordo com a especificação do enunciado.
             for i in range(len(f)):
                 print(f[i])
 
-1_6
+4_6
 Escreva um programa que leia um vetor de inteiros com n elementos. Depois ordene todos os elementos em ordem crescente. Importante: não utilize funções prontas da linguagem para ordenação! Escreva o seu algoritmo de ordenação.
 
 Entrada:
@@ -181,7 +181,7 @@ Vetor ordenado (ordem crescente).
         for i in range(0,n):
             print(v[i])
 
-1_7
+4_7
 Escreva um programa que leia um vetor de inteiros com n elementos. Depois verifique se o vetor é "espelhado", ou seja, a primeira metade é igual ao inverso da segunda. Por exemplo, os vetores a seguir são "espelhados": [5 9 7 8 8 7 9 5], [1 2 3 2 1], mas o vetor [1 2 3 4 5] não é.
 
 Entrada:
@@ -208,7 +208,7 @@ Imprima "SIM" se o vetor for "espelhado" e "NAO" caso contrário (observe que n�
         else: 
             print("NAO")
 
-1_8
+4_8
 Escreva um programa que leia um vetor de inteiros com n elementos. Depois verifique se o vetor está ordenado em ordem crescente.
 Observação: após a leitura do valor n, os elementos do vetor estão todos dispostos em apenas uma linha. Por exemplo:
 
@@ -241,7 +241,7 @@ Imprima "SIM" se o vetor estiver ordenado e "NAO" caso contrário (observe que n
         else:
             print("SIM")    
 
-1_9
+4_9
 Escreva um programa que leia dois vetores (A e B) de mesmo comprimento n. Para isso, o programa deve ler um valor inteiro n (comprimento), ler o n valores de um dos vetores e depois os n valores do outro vetor. Ao final, o programa deve imprimir "SIM" se um vetor for o resultado de uma multiplicação de todos os elementos do outro pelo mesmo valor, ou "NAO" caso contrário (não há til ~ em NAO).
 Por exemplo, considere os vetores A = [1, 2, 5, 10] e B = [3, 6, 15, 30]. Neste caso, o programa deve imprimir "SIM", pois o vetor B é resultado da multiplicação de todos os elementos de A por 3.
 Outro exemplo: considere os vetores A = [1, 2, 5, 10] e B = [3, 6, 15, 90]. Neste caso, o programa deve imprimir "NAO", pois o vetor B não é resultado da multiplicação de todos os elementos de A por um mesmo valor. Os três primeiros números foram multiplicados por 3, mas o quarto foi multiplicado por 9.
@@ -284,7 +284,7 @@ SIM/NAO (dependendo se um vetor for o resultado de uma múltiplicação de todos
         else:
             print("SIM")
 
-1_10
+4_10
 Escreva um programa que leia um valor n e depois os n elementos de um vetor de inteiros.
 Observação: após a leitura do valor n, os elementos do vetor estão todos dispostos em apenas uma linha. Por exemplo:
 8
