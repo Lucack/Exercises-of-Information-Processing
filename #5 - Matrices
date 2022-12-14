@@ -1,7 +1,7 @@
 #5 - Matrizes
 
 
-1_1
+5_1
 Escreva um programa que leia uma matriz para armazenar as C notas de uma turma e calcular a média de cada um dos L alunos. Portanto, será lida uma matriz com L linhas (uma para cada aluno) e C colunas (cada coluna terá uma nota).
 Para ler a matriz, primeiro será informado o número de linhas e depois o número de colunas. Após a leitura das dimensões da matriz, os elementos de cada linha da matriz estão dispostos linha por linha. Por exemplo (as duas primeiras linhas são as dimensões da matriz: número de linhas (2) e número de colunas(3)):
 2
@@ -64,7 +64,7 @@ Exemplo:
                 else:
                     print(f"{m:.2f}",end=" ")
 
-1_2
+5_2
 Escreva um programa que leia uma matriz com L linhas e C colunas.
 Para ler a matriz, primeiro será informado o número de linhas e depois o número de colunas. Após a leitura das dimensões da matriz, os elementos de cada linha da matriz estão dispostos linha por linha. Por exemplo (as duas primeiras linhas são as dimensões da matriz: número de linhas (2) e número de colunas(3)):
 2
@@ -122,7 +122,7 @@ Matriz com os valores das colunas de índice ímpar multiplicados por 3
                 if j==c-1:
                     print()
 
-1_3
+5_3
 Escreva um programa que leia as dimensões de uma matriz e então imprima uma matriz que contém uma sequência de números ordenados linha a linha formando um zig-zag. Exemplo para uma matriz com 4 linhas e 3 colunas:
 
 Entrada:
@@ -163,7 +163,7 @@ Exemplo:
                 if j==c-1:
                     print()
 
-1_4
+5_4
 Escreva um programa que leia uma matriz com n linhas e m colunas. Após isso, ordene os elementos em cada linha (ordem crescente). Importante: não utilize funções prontas da linguagem para ordenação! Escreva o seu algoritmo de ordenação.
 Para ler a matriz, primeiro será informado o número de linhas e depois o número de colunas. Após a leitura das dimensões da matriz, os elementos de cada linha da matriz estão dispostos linha por linha. Por exemplo (as duas primeiras linhas são as dimensões da matriz: número de linhas (2) e número de colunas(3)):
 2
@@ -203,7 +203,7 @@ Dica para Python ou Java: a leitura dos elementos da matriz da forma descrita aq
                 print(m[i][j],end=" ")
             print()
 
-1_5
+5_5
 Escreva um programa que leia uma matriz com dimensões n x n. Depois, calcule a soma de todos os valores pares abaixo da diagonal principal.
 Para ler a matriz, primeiro será informada a dimensão n. Após isso, os elementos de cada linha da matriz estão dispostos linha por linha. Por exemplo (a primeira linha é o valor de n):
 3
@@ -239,7 +239,7 @@ Soma dos valores pares abaixo da diagonal principal.
                     s=s+int(valores[j])
         print(s)
 
-1_6
+5_6
 Escreva um programa que leia uma matriz de dimensões n x n (assuma que n é par). Após isso, imprima o resultado da matriz dobrada da seguinte forma:
 Para ler a matriz, primeiro será informada a dimensão n. Após isso, os elementos de cada linha da matriz estão dispostos linha por linha. Por exemplo (a primeira linha é o valor de n):
 3
@@ -278,7 +278,7 @@ Matriz após as dobras
                 print(m[i][j],end=" ")
             print()
 
-1_7
+5_7
 Escreva um programa que leia um valor n e então imprima uma matriz de tamanho n x n de acordo com o exemplo a seguir (veja que os números seguem uma ordem):
 Para n = 5:
 1 2 3 4 5
@@ -305,7 +305,7 @@ Matriz n x n de acordo com a especificação do enunciado
                     print(m[i][j],end=" ")
                     print()
 
-1_8
+5_8
 Escreva um programa que leia duas matrizes: A e B. Depois mostre o resultado da seguinte operação: 3 x A x B.
 Observação: após a leitura das dimensões de uma matriz, os elementos de cada linha da matriz estão dispostos linha por linha. Por exemplo (as duas primeiras linhas são as dimensões da matriz: número de linhas (2) e número de colunas(3)):
 2
@@ -360,7 +360,7 @@ Matriz resultado da operação 3 x A x B, isto é, o escalar 3 que multiplica a 
                 print(m[i][j],end=" ")
             print()
 
-1_9
+5_9
 Escreva um programa que leia uma matriz e então verifique se a matriz possui somente múltiplos de 10 e se cada uma das linhas está ordenada (seja em ordem crescente ou decrescente).
 Observação: após a leitura das dimensões da matriz, os elementos de cada linha da matriz estão dispostos linha por linha. Por exemplo (as duas primeiras linhas são as dimensões da matriz: número de linhas (2) e número de colunas(3)):
 2
@@ -412,7 +412,7 @@ Neste exemplo, a saída foi sim, pois todos os valores são múltiplos de 10 e t
         else:
             print("NAO")            
 
-1_10
+5_10
 Escreva um programa que leia uma matriz que contém o mapa de um campo minado. Nesta matriz, o valor 1 indica que há uma bomba na célula e o valor 0 indica que não há uma bomba na célula. A matriz é composta apenas pelos valores 0 e 1. Exemplo de mapa do campo minado seguindo esse formato:
 Observação: após a leitura das dimensões da matriz, os elementos de cada linha da matriz estão dispostos linha por linha. Por exemplo (as duas primeiras linhas são as dimensões da matriz: número de linhas (2) e número de colunas(3)):
 2
