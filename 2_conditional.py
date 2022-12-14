@@ -15,20 +15,20 @@
 # APROVADO/REPROVADO
 # Observação: Mostre as médias com apenas duas casas decimais.
 
-      p1 = int(input())
-      p2 = int(input())
-      MF = (p1+p2)/2
-      print("{:.2f}".format(MF))
-      if (MF >= 5):
-          print("APROVADO")
-      elif (MF<5):
-          REC = int(input())
-          MR= (MF+REC)/2
-          print("{:.2f}".format(MR))
-          if (MR >=5):
-              print("APROVADO")
-          else:
-              print("REPROVADO")
+p1 = int(input())
+p2 = int(input())
+MF = (p1+p2)/2
+print("{:.2f}".format(MF))
+if (MF >= 5):
+    print("APROVADO")
+elif (MF<5):
+    REC = int(input())
+    MR= (MF+REC)/2
+    print("{:.2f}".format(MR))
+if (MR >=5):
+    print("APROVADO")
+else:
+    print("REPROVADO")
     
  
 
@@ -46,15 +46,15 @@
 # Atingiu meta de vendas/Nao atingiu meta de vendas
 # Observação: Não há um ~ "til" na palavra "Nao" na saída do programa.
 
-      sfixo= int(input())
-      tvendas= int(input())
-      com= (tvendas*(0.2))
-      print("{:.2f}".format(com))
-      esperado= (sfixo)/2
-      if (com >= esperado):
-          print("Atingiu meta de vendas")
-      else:
-          print("Nao atingiu meta de vendas")
+sfixo= int(input())
+tvendas= int(input())
+com= (tvendas*(0.2))
+print("{:.2f}".format(com))
+esperado= (sfixo)/2
+if (com >= esperado):
+    print("Atingiu meta de vendas")
+else:
+    print("Nao atingiu meta de vendas")
 
 # 2_3
 
@@ -68,17 +68,17 @@
 # Saída:
 # Mensagem (de acordo com a temperatura).
 
-        temp= int(input())
-        if (temp <= -20):
-            print("Muito Baixa")
-        elif (temp >-20 & temp <= 30):
-            print("Baixa")
-        elif (30 < temp <= 200):
-            print("Normal")
-        elif (200 < temp <= 250):
-            print("Alta")
-        else:
-            print("Muito Alta")
+temp= int(input())
+if (temp <= -20):
+    print("Muito Baixa")
+elif (temp >-20 & temp <= 30):
+    print("Baixa")
+elif (30 < temp <= 200):
+    print("Normal")
+elif (200 < temp <= 250):
+    print("Alta")
+else:
+    print("Muito Alta")
 
 
 # 2_4
@@ -98,26 +98,26 @@
 # Saída
 # SIM/NAO (de acordo com o critério descrito no enunciado do exercício)
 
-          ano = int(input())
-          cod = int(input())
-          dist = int(input())
-          if (1901 <= ano<= 2000):
-              if (cod == 100 or cod == 101):
-                  print("SIM")
-              else:
-                  print("NAO")
-          elif (2001 <= ano <= 2020):
-              if (dist > 5000):
-                  print("SIM")
-              else:
-                  print("NAO")
-          elif(ano==2021):
-              if ((cod == 200 or cod == 201) & (dist > 200)):
-                  print("SIM")
-              else:
-                  print('NAO')
-          else:
-              print("NAO")
+ano = int(input())
+cod = int(input())
+dist = int(input())
+if (1901 <= ano<= 2000):
+    if (cod == 100 or cod == 101):
+        print("SIM")
+    else:
+        print("NAO")
+elif (2001 <= ano <= 2020):
+    if (dist > 5000):
+        print("SIM")
+    else:
+        print("NAO")
+elif(ano==2021):
+    if ((cod == 200 or cod == 201) & (dist > 200)):
+        print("SIM")
+    else:
+        print('NAO')
+else:
+    print("NAO")
 
 # 2_5
 # Escreva um programa que leia os comprimentos dos lados de um triângulo. Após isso, verifique se é um triângulo válido. Observação: para um triângulo ser válido, nenhum dos lados pode ser mair que a soma dos outros dois lados.
@@ -129,13 +129,13 @@
 # Seu programa deve imprimir "VALIDO" se for um triângulo válido ou "INVALIDO" se não for. Importante: observe que a letra "A" em "VALIDO"/"INVALIDO" não tem acento neste programa.
 
 
-      l1 = int(input())
-      l2 = int(input())
-      l3 = int(input())
-      if ((l1+l2>l3) & (l2+l3>l1) & (l1+l3>l2)):
-          print("VALIDO")
-      else:
-          print("INVALIDO")
+l1 = int(input())
+l2 = int(input())
+l3 = int(input())
+if ((l1+l2>l3) & (l2+l3>l1) & (l1+l3>l2)):
+    print("VALIDO")
+else:
+    print("INVALIDO")
 
 # 2_6
 # Escreva um programa que leia duas datas (dia, mês e ano) e então retorne qual das duas é a mais antiga.
@@ -147,25 +147,25 @@
 # Saída:
 # Se a data 1 for mais antiga, imprima "DATA1" e, caso contrário, imprima "DATA2". Se as duas datas forem iguais, imprima "IGUAIS".
 
-        dia1 = int(input())
-        mes1 = int(input())
-        ano1 = int(input())
-        dia2 = int(input())
-        mes2 = int(input())
-        ano2 = int(input())
-        dia = dia1-dia2
-        mes = mes1-mes2
-        ano = ano1-ano2
-        if (ano >0):
-            print("DATA2")
-        elif ((ano == 0) & (mes >0)):
-            print("DATA2")
-        elif ((ano == 0) & (mes == 0) & (dia>0)):
-            print("DATA2")
-        elif ((ano == 0) & (mes == 0) & (dia == 0)):
-            print("IGUAIS")
-        else:
-            print("DATA1")
+dia1 = int(input())
+mes1 = int(input())
+ano1 = int(input())
+dia2 = int(input())
+mes2 = int(input())
+ano2 = int(input())
+dia = dia1-dia2
+mes = mes1-mes2
+ano = ano1-ano2
+if (ano >0):
+    print("DATA2")
+elif ((ano == 0) & (mes >0)):
+    print("DATA2")
+elif ((ano == 0) & (mes == 0) & (dia>0)):
+    print("DATA2")
+elif ((ano == 0) & (mes == 0) & (dia == 0)):
+    print("IGUAIS")
+else:
+    print("DATA1")
 
 
 # 2_7
@@ -177,51 +177,51 @@
 # Saída:
 # Os três números em ordem crescente.
 
-        a = int(input())
-        b = int(input())
-        c = int(input())
-        ab = a-b
-        bc = b-c
-        ac = a-c
+a = int(input())
+b = int(input())
+c = int(input())
+ab = a-b
+bc = b-c
+ac = a-c
 
-        if ((ab<=0) & (ac<=0)):
-            print(a)
-            if (bc>=0):
-                print(c)
-                print(b)
-            else:
-                print(b)
-                print(c)
-        elif ((ab>=0) & (bc<=0)):
-            print(b)
-            if (ac>=0):
-                print(c)
-                print(a)
-            else:
-                print(a)
-                print(c)
-        elif ((ac>=0) & (bc>=0)):
-            print(c)
-            if (ab>=0):
-                print(b)
-                print(a)
-            else:
-                print(a)
-                print(b)
-        else:
-            print("none")
+if ((ab<=0) & (ac<=0)):
+    print(a)
+    if (bc>=0):
+        print(c)
+        print(b)
+    else:
+        print(b)
+        print(c)
+elif ((ab>=0) & (bc<=0)):
+    print(b)
+    if (ac>=0):
+        print(c)
+        print(a)
+    else:
+        print(a)
+        print(c)
+elif ((ac>=0) & (bc>=0)):
+    print(c)
+    if (ab>=0):
+        print(b)
+        print(a)
+    else:
+        print(a)
+        print(b)
+else:
+    print("none")
 
 
 
 # 2_8
 # Escreva um programa que leia os valores x e y de um ponto. A partir disso, determine se o ponto está dentro ou fora do retângulo a seguir:
 
-        x = int(input())
-        y = int(input())
-        if ((-800 <= x <= 22 )&(-20 <= y <= 35)):
-            print("SIM")
-        else:
-            print("NAO")
+x = int(input())
+y = int(input())
+if ((-800 <= x <= 22 )&(-20 <= y <= 35)):
+    print("SIM")
+else:
+    print("NAO")
 
 # 2_9
 # Uma montadora de discos voadores possui fábricas em diversos planetas e faz entregas em diversas partes do universo. Essa empresa usa números de 6 dígitos para identificar a origem do disco, o destino do disco e o modelo, conforme formato a seguir:
@@ -242,42 +242,42 @@
 # Planeta de destino
 # Modelo do disco voador
 
-        a = int(input())
-        oo = (a%1000000)//10000
-        dd = (a%100000)*100//10000
-        mm = (a%100)*10000//10000
+a = int(input())
+oo = (a%1000000)//10000
+dd = (a%100000)*100//10000
+mm = (a%100)*10000//10000
 
-        if (dd>=100):
-            dd=(a%10000)*1000//100000
+if (dd>=100):
+    dd=(a%10000)*1000//100000
 
 
-        if (oo == 80):
-            oo = "Marte"
-        elif (oo == 81):
-            oo = "Saturno"
-        elif (oo == 90):
-            oo = "Netuno"
-        elif (oo == 91):
-            oo = "HD21749b"
+if (oo == 80):
+    oo = "Marte"
+elif (oo == 81):
+    oo = "Saturno"
+elif (oo == 90):
+    oo = "Netuno"
+elif (oo == 91):
+    oo = "HD21749b"
 
-        if (dd == 80):
-            dd = "Marte"
-        elif (dd == 81):
-            dd = "Saturno"
-        elif (dd == 90):
-            dd = "Netuno"
-        elif (dd == 91):
-            dd = "HD21749b"
+if (dd == 80):
+    dd = "Marte"
+elif (dd == 81):
+    dd = "Saturno"
+elif (dd == 90):
+    dd = "Netuno"
+elif (dd == 91):
+    dd = "HD21749b"
 
-        if (mm == 60):
-            mm = "A6000"
-        elif (mm == 61):
-            mm = "B7500"
-        else:
-            mm = "C9000"
-        print(oo)
-        print(dd)
-        print(mm)
+if (mm == 60):
+    mm = "A6000"
+elif (mm == 61):
+    mm = "B7500"
+else:
+    mm = "C9000"
+print(oo)
+print(dd)
+print(mm)
 
 
 # 2_10
@@ -304,31 +304,31 @@
 # Distância (imprima o valor com duas casas decimais após a vírgula)
 # SIM/TALVEZ/NAO (de acordo com os critérios apresentados no enunciado)
 
-        carga = int(input())
-        Ax = int(input())
-        Ay = int(input())
-        Bx = int(input())
-        By = int(input())
+carga = int(input())
+Ax = int(input())
+Ay = int(input())
+Bx = int(input())
+By = int(input())
 
-        import math
-        dist= math.sqrt((Bx-Ax)**2+(By-Ay)**2)
-        print("{:.2f}".format(dist))
+import math
+dist= math.sqrt((Bx-Ax)**2+(By-Ay)**2)
+print("{:.2f}".format(dist))
 
-        if (carga <= 50000):
+if (carga <= 50000):
             if (dist<=18000):
                 print("SIM")
             elif (dist<=(18000*1.1)):
                 print("TALVEZ")
             else:
                 print("NAO")
-        elif (50000 < carga <= 200000):
+elif (50000 < carga <= 200000):
             if (dist<=9000 ):
                 print("SIM")
             elif (dist<=(9000*1.1)):
                 print("TALVEZ")
             else:
                 print("NAO")
-        elif (200000 < carga <= 250000):
+elif (200000 < carga <= 250000):
             if (dist<=3000  ):
                 print("SIM")
             elif (dist<=(3000*1.1)):
